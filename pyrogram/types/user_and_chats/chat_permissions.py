@@ -78,6 +78,7 @@ class ChatPermissions(Object):
     def __init__(
         self,
         *,
+        can_send_other_messages: bool | None = None, 
         all_perms: bool | None = None,
         can_send_messages: bool | None = None,
         can_send_media_messages: bool | None = None,
